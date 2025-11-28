@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Material Design 3 Inspired Palette - Dark Theme */
+  --bg-primary: #000000;
+  --bg-secondary: #1e1e1e;
+  --bg-surface: #2d2d2d;
+
+  --color-primary: #8ab4f8;
+  /* Google Blue */
+  --color-on-primary: #000000;
+  --color-secondary: #c4c7c5;
+  /* Muted Grey */
+  --color-accent: #81c995;
+  /* Soft Green */
+
+  --text-primary: #e3e3e3;
+  --text-secondary: #c4c7c5;
+  --text-muted: #8e918f;
+
+  --font-main: 'Inter', 'Roboto', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Rajdhani', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Soft, realistic shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 16px 4px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  --transition-standard: all 0.3s cubic-bezier(0.2, 0.0, 0, 1.0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  line-height: 1.5;
+}
+
+/* Background Layers */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/src/assets/bg-pattern.png') repeat center center;
+  background-size: 400px 400px;
+  z-index: -3;
+  opacity: 0.15;
+  animation: subtleMove 60s linear infinite;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(138, 180, 248, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(129, 201, 149, 0.06) 0%, transparent 50%);
+  z-index: -2;
+  animation: gradientShift 15s ease-in-out infinite;
+}
+
+@keyframes subtleMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes gradientShift {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-standard);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-standard);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  background: #333333;
+  /* Slightly lighter on hover */
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  transition: var(--transition-standard);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn-primary:hover {
+  background: #aecbfa;
+  /* Lighter blue */
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Hero section adjustments */
+  section>div>div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Hide floating elements on mobile for cleaner look */
+  section>div[style*="position: absolute"][style*="left: 5%"],
+  section>div[style*="position: absolute"][style*="right: 5%"] {
+    display: none;
+  }
+
+  /* Adjust hero illustration size */
+  img[alt="Gaming Hero"] {
+    max-width: 400px !important;
+  }
+
+  /* Stack stats vertically on very small screens */
+  @media (max-width: 480px) {
+    div[style*="display: flex"][style*="gap: 2rem"] {
+      flex-direction: column;
+      gap: 1rem !important;
+    }
+  }
+}
+
+/* Auth Modal Mobile Styles */
+@media (max-width: 480px) {
+
+  /* Reduce modal padding on mobile */
+  div[style*="padding: 40px"] {
+    padding: 24px !important;
+  }
+
+  /* Smaller title on mobile */
+  h2[style*="fontSize: '2rem'"] {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Responsive Utilities (Replacing Tailwind) */
+.desktop-only {
+  display: none !important;
+}
+
+.mobile-only {
+  display: flex !important;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: flex !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+}
