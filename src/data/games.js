@@ -188,7 +188,7 @@ export const GAMES = [
         title: "Valorant",
         category: "Shooter",
         rating: 4.6,
-        image: "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4475f6a99f61b301e626c0e1c72f9ca0b2e1c1e9-1920x1080.jpg",
+        image: "https://images.contentstack.io/v3/assets/bltb653ed6b1f39f2fa/blt9bb219fcd7980336/60d7ca02636a0c7c34dd094b/VALORANT_Key_Art_5.jpg",
         trailerUrl: "https://www.youtube.com/watch?v=e_E9W2vsRbQ",
         description: "Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.",
         pros: ["Precise, high-skill gunplay", "Tactical depth with abilities", "Clean visual clarity", "Strong anti-cheat system"],
