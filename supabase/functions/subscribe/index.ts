@@ -45,17 +45,60 @@ serve(async (req: Request) => {
                 Authorization: `Bearer ${RESEND_API_KEY}`,
             },
             body: JSON.stringify({
-                from: "GameZone <onboarding@resend.dev>", // Default Resend sender
+                from: "GameFlex <onboarding@resend.dev>",
                 to: [email],
-                subject: "Welcome to GameZone!",
+                subject: "Welcome to the Squad! 🎮 | GameFlex",
                 html: `
-          <h1>Welcome to GameZone!</h1>
-          <p>Thanks for subscribing to our newsletter.</p>
-          <p>You'll now receive the latest game reviews, exclusive bonuses, and news directly to your inbox.</p>
-          <br/>
-          <p>Happy Gaming,</p>
-          <p>The GameZone Team</p>
-        `,
+                    <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #e2e8f0; padding: 40px 20px;">
+                        <div style="max-width: 600px; margin: 0 auto; background-color: #1e293b; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+                            
+                            <!-- Header -->
+                            <div style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%); padding: 30px 0; text-align: center;">
+                                <h1 style="color: #ffffff; margin: 0; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">GameFlex</h1>
+                            </div>
+
+                            <!-- Content -->
+                            <div style="padding: 40px 30px;">
+                                <h2 style="color: #f8fafc; margin-top: 0; font-size: 24px;">Welcome to the Inner Circle! 🚀</h2>
+                                
+                                <p style="color: #cbd5e1; line-height: 1.6; font-size: 16px;">
+                                    Hey there,
+                                </p>
+                                
+                                <p style="color: #cbd5e1; line-height: 1.6; font-size: 16px;">
+                                    Thanks for joining the <strong>GameFlex</strong> community! You've officially leveled up your inbox. We're stoked to have you on board.
+                                </p>
+
+                                <p style="color: #cbd5e1; line-height: 1.6; font-size: 16px;">
+                                    Get ready for:
+                                </p>
+
+                                <ul style="color: #cbd5e1; line-height: 1.6; font-size: 16px; padding-left: 20px;">
+                                    <li style="margin-bottom: 10px;">🔥 <strong>Exclusive Reviews</strong> on the hottest new drops.</li>
+                                    <li style="margin-bottom: 10px;">💎 <strong>Hidden PC & Client Games</strong> you usually miss.</li>
+                                    <li style="margin-bottom: 10px;">📈 <strong>Pro Strategies</strong> to dominate the leaderboards.</li>
+                                </ul>
+
+                                <div style="text-align: center; margin: 35px 0;">
+                                    <a href="https://gameflexhub.com" style="background-color: #10b981; color: #000000; padding: 14px 32px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: all 0.2s;">
+                                        Explore GameFlex Hub
+                                    </a>
+                                </div>
+
+                                <p style="color: #94a3b8; font-size: 14px; margin-top: 30px; border-top: 1px solid #334155; padding-top: 20px;">
+                                    Stay frosty,<br/>
+                                    <strong>The GameFlex Team</strong>
+                                </p>
+                            </div>
+
+                            <!-- Footer -->
+                            <div style="background-color: #0f172a; padding: 20px; text-align: center; font-size: 12px; color: #64748b;">
+                                <p style="margin: 0;">&copy; ${new Date().getFullYear()} GameFlex Hub. All rights reserved.</p>
+                                <p style="margin: 5px 0 0;">You received this because you subscribed on our website.</p>
+                            </div>
+                        </div>
+                    </div>
+                `,
             }),
         });
 
