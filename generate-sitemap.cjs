@@ -6,7 +6,7 @@ const path = require('path');
  * This creates a basic sitemap - will be enhanced after getting articles data
  */
 function generateSitemap() {
-    const baseUrl = 'https://your-domain.com'; // UPDATE THIS after Vercel deployment
+    const baseUrl = 'https://gameflexhub.com'; // Production domain
     const currentDate = new Date().toISOString().split('T')[0];
 
     // Core static pages

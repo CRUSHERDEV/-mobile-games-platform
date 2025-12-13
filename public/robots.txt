@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://gameflexhub.com/sitemap.xml
 
 # Disallow admin/private areas (if any)
 Disallow: /api/

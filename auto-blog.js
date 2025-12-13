@@ -95,33 +95,63 @@ async function generateArticleContent(newsItem) {
                 messages: [
                     {
                         role: 'system',
-                        content: `You are a professional gaming journalist writing for GameFlex, a premium gaming news website. 
-                        
-Writing style guidelines:
-- Professional yet engaging tone
-- 400-600 words
-- SEO-optimized with natural keyword placement
-- Include analysis and opinion, not just facts
-- Use proper markdown formatting with headers
-- Avoid clickbait, focus on value
-- Write in first-person plural ("we", "our") for brand voice
+                        content: `You are an SEO-expert gaming journalist writing for GameFlex (gameflexhub.com), a growing gaming news website targeting Google rankings.
 
-Structure:
-## Opening (compelling hook)
-### What Happened (facts and details)
-### Why It Matters (analysis)
-### Our Take (expert opinion)
-### What's Next (forward-looking)
+CRITICAL SEO REQUIREMENTS:
+- Target LONG-TAIL KEYWORDS (e.g., "best free RPG games 2024", "[game name] complete guide")
+- Include primary keyword in title (H1)
+- Use keyword in first paragraph (naturally)
+- Use keyword 5-7 times throughout article (naturally)
+- Write 600-800 words (optimal for SEO)
+- Use descriptive headings (H2, H3) with related keywords
 
-Make it informative, professional, and engaging.`
+Writing Style:
+- Professional yet engaging, conversational tone
+- First-person plural ("we", "our") for brand voice
+- Include specific details, statistics, features
+- Provide actionable insights and opinions
+- Natural keyword placement (NO stuffing)
+
+Structure Requirements:
+## [Primary Keyword in Title]
+
+**Opening paragraph with keyword**
+
+### What Happened (Facts & Details)
+- Include specific information
+- Use related keywords naturally
+
+### Why It Matters (Analysis & Impact)
+- Explain significance to gamers
+- Use industry terms
+
+### Key Features/Highlights
+- Bulleted list of important points
+- Include searchable terms
+
+### Our Expert Take (Opinion & Recommendation)
+- GameFlex perspective
+- Include future outlook
+
+### What Gamers Should Know
+- Practical advice
+- Actionable insights
+
+Use gaming terminology naturally. Make it informative, engaging, and SEO-friendly. Focus on long-tail keywords that can rank quickly.`
                     },
                     {
                         role: 'user',
-                        content: `Write a professional gaming article about: ${newsItem.title}\n\nContext: ${newsItem.description || newsItem.title}\n\nSource: ${newsItem.source || 'Gaming News'}`
+                        content: `Write an SEO-optimized gaming article about: ${newsItem.title}
+
+Context: ${newsItem.description || newsItem.title}
+
+Source: ${newsItem.source || 'Gaming News'}
+
+Target a long-tail keyword related to this topic. Make it rank-worthy for Google.`
                     }
                 ],
                 temperature: 0.7,
-                max_tokens: 1000
+                max_tokens: 1200
             })
         });
 
@@ -146,35 +176,62 @@ function generateTemplateContent(newsItem) {
     const title = newsItem.title;
     const description = newsItem.description || newsItem.title;
 
-    return `## ${title}
+    // Extract game name if present for keyword targeting
+    const gameMatch = title.match(/([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)/);
+    const gameName = gameMatch ? gameMatch[0] : 'trending game';
 
-The gaming world is buzzing with the latest developments. Here's what you need to know.
+    return `## ${title} - Complete Coverage 2024
 
-### What Happened
+The gaming community is buzzing with the latest ${gameName} news. Here's everything you need to know about this exciting development.
+
+### What Happened - Key Details
 
 ${description}
 
-This news has caught the attention of gamers worldwide, and for good reason. The announcement comes at a crucial time in the gaming industry, where innovation and player experience are more important than ever.
+This announcement has captured the attention of gamers worldwide, and for good reason. The update comes at a pivotal moment in the industry, where player experience and innovation continue to drive the gaming landscape forward.
 
-### Why It Matters
+Industry insiders suggest this move could significantly impact how players engage with ${gameName} and similar titles in the coming months.
 
-This development represents a significant shift in how we experience gaming content. For players, this means new opportunities to engage with their favorite games and communities.
+### Why This Matters to Gamers
 
-The broader implications for the gaming industry are substantial. As developers continue to push boundaries and explore new technologies, we're seeing a transformation in what's possible in interactive entertainment.
+This development represents a major shift in the gaming ecosystem. For players invested in ${gameName}, this means new opportunities to enhance their gaming experience and explore fresh content that pushes the boundaries of what's possible in modern gaming.
 
-### Our Take
+The broader implications for the industry are substantial. As developers continue to innovate and respond to player feedback, we're witnessing an evolution in how games are developed, updated, and monetized. This trend toward player-centric design is reshaping the entire gaming landscape.
 
-At GameFlex, we believe this is an exciting development for the gaming community. The focus on player experience and innovation shows a commitment to advancing the medium we all love.
+### Key Features and Highlights
 
-While there are always questions about implementation and long-term impact, the initial signs are promising. We'll be watching closely to see how this unfolds.
+- **Enhanced Player Experience**: Focus on quality-of-life improvements
+- **Community-Driven Updates**: Listening to player feedback
+- **Technical Innovation**: Leveraging latest gaming technology
+- **Long-Term Support**: Commitment to ongoing development
+- **Accessibility**: Making gaming more inclusive
 
-### What's Next
+### Our GameFlex Take - Expert Analysis
 
-As this story develops, we'll continue to provide updates and analysis. The gaming community's response will be crucial in shaping how this evolves.
+At GameFlex, we believe this is a promising step forward for ${gameName} and the gaming community. The focus on player experience and continuous improvement demonstrates a commitment to delivering quality content that resonates with modern gamers.
 
-Stay tuned to GameFlex for the latest updates and expert coverage of all things gaming.
+While questions remain about long-term implementation and community reception, the initial signs point toward positive momentum. We're particularly excited about the potential for innovation and the signal this sends about industry priorities.
 
-**Our Rating: 7.5/10** - Promising developments with room for growth.`;
+The development team's responsiveness to community feedback is especially noteworthy. This player-first approach is exactly what the gaming industry needs more of.
+
+### What Gamers Should Know
+
+As this story continues to unfold, here's what you should keep in mind:
+
+1. **Stay Updated**: Follow official channels for the latest information
+2. **Community Engagement**: Join discussions to share your perspective
+3. **Try It Out**: Experience the updates firsthand when available
+4. **Provide Feedback**: Your input helps shape future development
+
+**Expert Tip**: Keep an eye on ${gameName} community forums and social media for insider insights and early previews of upcoming features.
+
+### Looking Ahead
+
+The coming weeks will be crucial in determining the full impact of this announcement. We'll be monitoring player reactions, performance metrics, and developer responses closely.
+
+Stay tuned to GameFlex for comprehensive coverage, expert analysis, and the latest updates as this story develops. We're committed to bringing you the insights that matter most to your gaming experience.
+
+**GameFlex Rating: 7.5/10** - Promising developments with strong potential for positive impact on the gaming community.`;
 }
 
 /**
