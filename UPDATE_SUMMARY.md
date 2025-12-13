@@ -325,3 +325,49 @@ Your dev server is running at: **http://localhost:5173/news**
 ---
 
 *Last Updated: December 11, 2024*
+
+---
+
+## ✅ Update Summary - December 13, 2024
+
+### 1. Mobile Game Trailers Fixed ✅
+
+**Issue:** Many mobile games (Top 200+) had incorrect or placeholder YouTube trailer links (e.g., repeatedly linking to the same video).
+
+**Resolution:**
+- Scanned `src/data/mobileGames.js` and identified ~200 placeholder links.
+- systematically replaced them with correct, official YouTube trailers for games like *Summoners War*, *Free Fire*, *Altos Adventure*, *Among Us*, etc.
+- Verified `src/data/games.js` correctly imports these updates.
+
+**Files Modified:** `src/data/mobileGames.js`
+
+### 2. Custom Newsletter Welcome Email Created ✅
+
+**Issue:** The newsletter welcome email was using a generic "GameZone" template.
+
+**Resolution:**
+- Completely redesigned the email HTML in the Supabase Edge Function.
+- **Branding:** Updated to "GameFlex Hub" with the official green/dark aesthetic.
+- **Content:** Added a "Welcome to the Squad" message with a list of benefits (Exclusive Reviews, Hidden Gems, Pro Strategies).
+- **Design:** Implemented a responsive, dark-mode friendly HTML layout.
+
+**Files Modified:** `supabase/functions/subscribe/index.ts`
+
+### 3. Next Steps for Deployment
+
+To make these changes live:
+
+1. **Frontend (Trailers)**: 
+   ```bash
+   git push origin main
+   ```
+   (Vercel will auto-deploy the site)
+
+2. **Backend (Email)**:
+   You must manually deploy the Supabase function:
+   ```bash
+   supabase functions deploy subscribe --no-verify-jwt
+   ```
+   (Requires Supabase CLI)
+
+---
