@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Gamepad2, Instagram, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
+import { trackNewsletterSignup } from '../utils/analytics';
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -40,6 +41,9 @@ const Footer = () => {
                 // We don't fail the whole process if just the email fails, 
                 // but you might want to log it or handle it differently.
             }
+
+            // Track newsletter signup in Google Analytics
+            trackNewsletterSignup('footer');
 
             setStatus('success');
             setEmail('');

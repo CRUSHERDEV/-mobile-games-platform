@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Welcome from './pages/Welcome';
 import { supabase } from './supabaseClient';
+import usePageTracking from './utils/usePageTracking';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -39,6 +40,12 @@ const Loading = () => (
   </div>
 );
 
+// Component to track page views
+const PageTracker = () => {
+  usePageTracking();
+  return null;
+};
+
 const App = () => {
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -67,6 +74,7 @@ const App = () => {
 
   return (
     <Router>
+      <PageTracker />
       <Suspense fallback={<Loading />}>
         <Routes>
           {/* Public Routes */}

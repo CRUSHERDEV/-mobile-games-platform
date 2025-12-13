@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowLeft } from 'lucide-react';
 import { getArticleById } from '../data/articles';
+import { trackArticleView } from '../utils/analytics';
+import { useEngagementTracking } from '../utils/usePageTracking';
 
 const Article = () => {
     const { id } = useParams();
     const article = getArticleById(id);
+
+    // Track engagement time on this article
+    useEngagementTracking(`article-${id}`);
+
+    // Track article view
+    useEffect(() => {
+        if (article) {
+            trackArticleView(article.id, article.title, article.category);
+        }
+    }, [article]);
 
     if (!article) {
         return (
