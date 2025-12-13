@@ -66,7 +66,7 @@ const Article = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
             <Helmet>
-                <title>{article.title} - GameZone</title>
+                <title>{article.title} - GameFlex</title>
                 <meta name="description" content={article.excerpt} />
             </Helmet>
 

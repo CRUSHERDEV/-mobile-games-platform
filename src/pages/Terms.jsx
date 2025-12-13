@@ -6,8 +6,8 @@ const Terms = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '1000px' }}>
             <Helmet>
-                <title>Terms of Service - GameZone</title>
-                <meta name="description" content="Read our Terms of Service to understand the rules and regulations for using GameZone." />
+                <title>Terms of Service - GameFlex</title>
+                <meta name="description" content="Read our Terms of Service to understand the rules and regulations for using GameFlex." />
             </Helmet>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

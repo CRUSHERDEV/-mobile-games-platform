@@ -14,8 +14,8 @@ const Contact = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '800px' }}>
             <Helmet>
-                <title>Contact Us - GameZone</title>
-                <meta name="description" content="Get in touch with the GameZone team. We're here to help with any questions or feedback." />
+                <title>Contact Us - GameFlex</title>
+                <meta name="description" content="Get in touch with the GameFlex team. We're here to help with any questions or feedback." />
             </Helmet>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const Contact = () => {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--text-secondary)' }}>
                                 <Mail size={20} color="var(--color-primary)" />
-                                <span>contact@gamezone.com</span>
+                                <span>contact@GameFlex.com</span>
                             </div>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: '1.6' }}>
                                 We typically respond to all inquiries within 24-48 hours. For partnership opportunities, please mention "Partnership" in your subject line.

@@ -64,7 +64,7 @@ const Footer = () => {
                         <div className="flex items-center gap-2 mb-4" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                             <Gamepad2 size={24} color="var(--color-primary)" />
                             <span className="text-xl font-bold" style={{ fontSize: '1.8rem', letterSpacing: '0.02em', color: 'var(--text-primary)', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>
-                                GameZone
+                                GameFlex
                             </span>
                         </div>
                         <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
@@ -130,7 +130,7 @@ const Footer = () => {
                 </div>
 
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>© 2024 GameZone. All rights reserved.</p>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>© 2024 GameFlex. All rights reserved.</p>
                     <div style={{ display: 'flex', gap: '1rem' }}>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }} aria-label="Instagram"><Instagram size={20} /></a>
                         <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }} aria-label="GitHub"><Github size={20} /></a>

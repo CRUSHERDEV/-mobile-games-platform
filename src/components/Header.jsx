@@ -57,7 +57,7 @@ const Header = ({ user }) => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <span className="text-2xl font-bold tracking-tighter" style={{ fontSize: '1.8rem', fontWeight: '700', letterSpacing: '0.02em', color: 'var(--text-primary)', fontFamily: 'var(--font-heading)', textTransform: 'uppercase' }}>
-              GameZone
+              GameFlex
             </span>
           </Link>
 
@@ -94,21 +94,8 @@ const Header = ({ user }) => {
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4" style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-            {user ? (
+            {user && (
               <UserMenu user={user} onLogout={handleLogout} />
-            ) : (
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn btn-primary desktop-only"
-                style={{
-                  background: 'linear-gradient(135deg, #8ab4f8 0%, #6fa0e8 100%)',
-                  boxShadow: '0 4px 16px rgba(138, 180, 248, 0.3)'
-                }}
-                onClick={() => openAuthModal('signup')}
-              >
-                Join Now
-              </motion.button>
             )}
 
             <button
@@ -164,7 +151,7 @@ const Header = ({ user }) => {
                 >
                   News
                 </Link>
-                {user ? (
+                {user && (
                   <button
                     className="btn btn-outline w-full"
                     onClick={() => {
@@ -179,32 +166,6 @@ const Header = ({ user }) => {
                   >
                     Log Out
                   </button>
-                ) : (
-                  <>
-                    <button
-                      className="btn btn-outline w-full"
-                      onClick={() => {
-                        setIsMobileMenuOpen(false);
-                        openAuthModal('login');
-                      }}
-                      style={{ width: '100%' }}
-                    >
-                      Log In
-                    </button>
-                    <button
-                      className="btn btn-primary w-full"
-                      onClick={() => {
-                        setIsMobileMenuOpen(false);
-                        openAuthModal('signup');
-                      }}
-                      style={{
-                        width: '100%',
-                        background: 'linear-gradient(135deg, #8ab4f8 0%, #6fa0e8 100%)'
-                      }}
-                    >
-                      Join Now
-                    </button>
-                  </>
                 )}
               </nav>
             </motion.div>

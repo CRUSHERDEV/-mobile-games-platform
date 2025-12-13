@@ -12,7 +12,12 @@ const CookieConsent = () => {
     }, []);
 
     const handleAccept = () => {
-        localStorage.setItem('cookieConsent', 'true');
+        localStorage.setItem('cookieConsent', 'accepted');
+        setIsVisible(false);
+    };
+
+    const handleReject = () => {
+        localStorage.setItem('cookieConsent', 'rejected');
         setIsVisible(false);
     };
 
@@ -28,26 +33,54 @@ const CookieConsent = () => {
                         bottom: '20px',
                         left: '20px',
                         right: '20px',
-                        maxWidth: '500px',
+                        maxWidth: '600px',
                         background: 'var(--bg-surface)',
-                        padding: '20px',
+                        padding: '24px',
                         borderRadius: 'var(--radius-md)',
                         boxShadow: 'var(--shadow-lg)',
                         zIndex: 9999,
-                        border: '1px solid rgba(255,255,255,0.1)',
+                        border: '1px solid rgba(138, 180, 248, 0.2)',
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '15px'
+                        gap: '16px'
                     }}
                 >
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.5' }}>
-                        We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
-                    </p>
-                    <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end' }}>
+                    <div>
+                        <h3 style={{
+                            fontSize: '1.1rem',
+                            fontWeight: '600',
+                            marginBottom: '8px',
+                            color: 'var(--text-primary)'
+                        }}>
+                            🍪 Cookie Consent
+                        </h3>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                            We use cookies to enhance your browsing experience, provide personalized content, and analyze our traffic.
+                            Your privacy matters to us. You can accept or reject cookies at any time.
+                        </p>
+                    </div>
+                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end', flexWrap: 'wrap' }}>
+                        <button
+                            onClick={handleReject}
+                            className="btn btn-outline"
+                            style={{
+                                padding: '10px 24px',
+                                fontSize: '0.9rem',
+                                minWidth: '100px',
+                                transition: 'all 0.3s ease'
+                            }}
+                        >
+                            Reject
+                        </button>
                         <button
                             onClick={handleAccept}
                             className="btn btn-primary"
-                            style={{ padding: '8px 20px', fontSize: '0.9rem' }}
+                            style={{
+                                padding: '10px 24px',
+                                fontSize: '0.9rem',
+                                minWidth: '100px',
+                                transition: 'all 0.3s ease'
+                            }}
                         >
                             Accept
                         </button>

@@ -25,8 +25,8 @@ const Welcome = () => {
             background: '#000'
         }}>
             <Helmet>
-                <title>Welcome to GameZone - Login Required</title>
-                <meta name="description" content="Join GameZone to access exclusive game reviews and deals." />
+                <title>Welcome to GameFlex - Login Required</title>
+                <meta name="description" content="Join GameFlex to access exclusive game reviews and deals." />
             </Helmet>
 
             {/* Background Image with Overlay */}
@@ -84,7 +84,7 @@ const Welcome = () => {
                                 fontFamily: 'var(--font-heading)',
                                 textTransform: 'uppercase'
                             }}>
-                                GameZone
+                                GameFlex
                             </span>
                         </div>
                     </div>

@@ -6,7 +6,7 @@ const Privacy = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px', maxWidth: '800px' }}>
             <Helmet>
-                <title>Privacy Policy - GameZone</title>
+                <title>Privacy Policy - GameFlex</title>
                 <meta name="description" content="Read our Privacy Policy to understand how we collect, use, and protect your personal information." />
             </Helmet>
             <motion.div

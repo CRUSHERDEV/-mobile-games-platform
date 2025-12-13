@@ -1,5 +1,539 @@
 export const articles = [
     {
+        id: "legacy-of-kain-remastered-2024",
+        title: "Legacy of Kain: Soul Reaver 1 & 2 Remastered Launches Today",
+        excerpt: "The iconic action-adventure series returns with enhanced graphics and updated gameplay across all major platforms.",
+        category: "News",
+        date: "December 11, 2024",
+        author: "GameFlex Team",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2370620/header.jpg",
+        content: `
+## A Legendary Series Returns
+
+Legacy of Kain: Soul Reaver 1 & 2 Remastered has officially launched today on Nintendo Switch, PS5, PS4, Xbox Series X|S, Xbox One, and PC, bringing enhanced graphics and updated gameplay to this beloved action-adventure series.
+
+### What's New in the Remaster
+
+**Visual Enhancements:**
+- Fully remastered high-definition graphics
+- Improved character models and environments
+- Enhanced lighting and particle effects
+- 4K support on current-gen consoles and PC
+
+**Gameplay Improvements:**
+- Modernized controls
+- Improved camera system
+- Quality of life improvements
+- Both games in one package
+
+### Why This Matters
+
+The Legacy of Kain series has been dormant for over a decade, making this remaster a significant moment for longtime fans and an opportunity for new players to experience Raziel's journey through Nosgoth.
+
+**Key Features:**
+- Epic vampire saga spanning two games
+- Dimension-shifting gameplay mechanics
+- Engaging narrative and voice acting
+- Gothic dark fantasy atmosphere
+
+### Pricing and Availability
+
+The remaster is available now for $29.99 across all platforms, offering excellent value for two complete games.
+
+### Should You Buy It?
+
+**Yes, if you:**
+- Love action-adventure games with deep lore
+- Enjoy gothic fantasy settings
+- Want to experience a gaming classic
+- Appreciate story-driven experiences
+
+**Maybe wait if:**
+- You're not into older game design philosophies
+- You prefer modern open-world games
+- You're sensitive to dated mechanics (even with improvements)
+
+### Our Verdict
+
+This remaster preserves what made the original games special while making them accessible to modern audiences. It's a must-play for fans and highly recommended for newcomers curious about this legendary series.
+
+**Rating: 8.5/10** - A faithful remaster that honors its source material.
+        `
+    },
+    {
+        id: "power-rangers-ritas-rewind-2024",
+        title: "Mighty Morphin Power Rangers: Rita's Rewind - Nostalgia Done Right",
+        excerpt: "A nostalgic side-scrolling 2D brawler brings the Power Rangers back to their 90s roots with style.",
+        category: "Reviews",
+        date: "December 11, 2024",
+        author: "Sarah Chen",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2201070/header.jpg",
+        content: `
+## It's Morphin Time!
+
+Mighty Morphin Power Rangers: Rita's Rewind launched today across PlayStation, Xbox, Nintendo Switch, and PC, delivering a love letter to 90s beat 'em ups with a Power Rangers twist.
+
+### Gameplay Overview
+
+**Classic Beat 'Em Up Action:**
+- Side-scrolling 2D brawler gameplay
+- Up to 5 players in local or online co-op
+- All five original Rangers playable
+- Megazord battles as epic boss fights
+
+**Combat System:**
+- Simple but satisfying combo system
+- Special morphin' moves and power-ups
+- Team-up attacks in co-op mode
+- Unlockable abilities and upgrades
+
+### Visual Style
+
+The game uses gorgeous pixel art that perfectly captures the 90s aesthetic while adding modern polish. Character sprites are detailed and animations are smooth, making every punch and kick feel impactful.
+
+**Presentation Highlights:**
+- Vibrant pixel art graphics
+- Authentic 90s Power Rangers atmosphere
+- Original voice actors return
+- Killer retro-inspired soundtrack
+
+### Story Mode
+
+Rita Repulsa has created a time-twisting plot to rewrite history. Players must battle through iconic locations from the show, facing classic monsters and putty patrollers.
+
+**Story Features:**
+- 8-10 hour campaign
+- Multiple difficulty levels
+- Branching paths and secrets
+- Unlockable challenges
+
+### Multiplayer Experience
+
+This is where the game truly shines. Couch co-op with friends recreates the magic of Saturday morning cartoons followed by gaming sessions.
+
+**Multiplayer Modes:**
+- Story co-op (1-5 players)
+- Arcade mode
+- Boss rush
+- Survival mode
+
+### Who Should Play This?
+
+**Perfect For:**
+- Power Rangers fans of any age
+- Beat 'em up enthusiasts
+- Couch co-op lovers
+- 90s nostalgia seekers
+
+**Skip If:**
+- You prefer complex fighting games
+- You only play single-player games
+- You're not into retro-style games
+
+### Final Verdict
+
+Rita's Rewind is exactly what a Power Rangers game should be - fun, colorful, and best enjoyed with friends. It doesn't reinvent the beat 'em up genre, but it executes the formula with style and heart.
+
+**Rating: 8/10** - Go Go Power Rangers indeed!
+
+**Price:** $39.99 across all platforms
+        `
+    },
+    {
+        id: "marvel-rivals-december-2024",
+        title: "Marvel Rivals: The Free-to-Play Hero Shooter Taking Over December",
+        excerpt: "Marvel's answer to Overwatch is here, and it's completely free. Here's everything you need to know about the game everyone's playing.",
+        category: "Features",
+        date: "December 11, 2024",
+        author: "Alex Martinez",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2767030/header.jpg",
+        content: `
+## Marvel Enters the Hero Shooter Arena
+
+Marvel Rivals has taken the gaming world by storm this December, offering a free-to-play hero shooter that pits iconic Marvel characters against each other in 6v6 team battles.
+
+### What Makes It Special
+
+**Massive Roster:**
+- 33+ playable Marvel heroes and villains at launch
+- Unique abilities for each character
+- Regular new character releases planned
+- No pay-to-win mechanics
+
+**Game Modes:**
+- Quickplay
+- Ranked competitive
+- Custom games
+- Limited-time events
+
+### Gameplay Deep Dive
+
+The game borrows heavily from Overwatch's formula but adds Marvel flair and destructible environments that create dynamic battlefields.
+
+**Classes:**
+- **Vanguards** (Tanks): Hulk, Captain America, Magneto
+- **Duelists** (DPS): Spider-Man, Iron Man, Scarlet Witch
+- **Strategists** (Support): Rocket Raccoon, Loki, Mantis
+
+**Unique Mechanics:**
+- Team-up abilities between specific characters
+- Destructible cover and environments
+- Ultimate combos
+- Environmental takedowns
+
+### Graphics and Performance
+
+Built on Unreal Engine 5, Marvel Rivals looks stunning with detailed character models and explosive visual effects.
+
+**Technical Specs:**
+- 60+ FPS on console (120 FPS on current gen)
+- Ray tracing support on PC and current-gen consoles
+- Cross-play across all platforms
+- Cross-progression system
+
+### Monetization Model
+
+The game is completely free with optional cosmetic purchases. No characters are locked behind paywalls.
+
+**What You Can Buy:**
+- Character skins
+- Emotes and victory poses
+- Battle passes (cosmetic only)
+- Voice lines
+
+**What's Free:**
+- All characters (current and future)
+- All game modes
+- Regular content updates
+- Competitive ranked play
+
+### Early Reception
+
+Players are praising the game's polished launch, diverse roster, and fair monetization. The destructible environments add a fresh twist to the hero shooter formula.
+
+**Pros:**
+- Completely free, no pay-to-win
+- All Marvel characters free
+- Polished gameplay
+- Great visuals
+- Active developer support
+
+**Cons:**
+- Matchmaking can be inconsistent
+- Some balance issues at launch
+- Limited maps currently
+- Learning curve for new players
+
+### Should You Play It?
+
+**Absolutely, if you:**
+- Love Marvel characters
+- Enjoy team-based shooters
+- Want a free alternative to Overwatch
+- Like competitive multiplayer
+
+**Maybe Skip If:**
+- You avoid free-to-play games
+- You only play single-player
+- You're burned out on hero shooters
+
+### Tips for New Players
+
+1. **Start with familiar characters** - Spider-Man and Iron Man are beginner-friendly
+2. **Learn one role first** - Don't try to master everything at once
+3. **Communicate** - Use pings and voice chat
+4. **Experiment with team-ups** - Some character combos have special abilities
+5. **Don't ignore objectives** - Kills don't win games alone
+
+### The Competitive Scene
+
+With support from NetEase and Marvel, the game has a promising esports future with tournaments already announced for 2025.
+
+### Our Verdict
+
+Marvel Rivals is the best superhero game of 2024 and a legitimate Overwatch competitor. Being free-to-play with no pay-to-win elements makes it a must-try for any multiplayer fan.
+
+**Rating: 9/10** - Marvel magic meets competitive excellence.
+        `
+    },
+    {
+        id: "path-of-exile-2-early-access",
+        title: "Path of Exile 2 Early Access: Everything You Need to Know",
+        excerpt: "The highly anticipated ARPG sequel enters Early Access this December. Is it worth jumping in now or should you wait?",
+        category: "Preview",
+        date: "December 11, 2024",
+        author: "Mike Rodriguez",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2694490/header.jpg",
+        content: `
+## The Next Evolution in Action RPGs
+
+Path of Exile 2 has entered Early Access, bringing massive changes to the beloved ARPG formula. Here's what you need to know before diving in.
+
+### What's New in PoE 2
+
+**Completely Rebuilt:**
+- New engine with improved graphics
+- Redesigned combat system
+- Fresh campaign (6 acts in Early Access, 12 at full launch)
+- Reimagined skill and progression systems
+
+**Major Changes:**
+- Skills are now tied to weapons, not gems alone
+- Dodge roll mechanic added
+- Slower, more deliberate combat
+- Improved controller support
+
+### Early Access Content
+
+**What's Available Now:**
+- 6 playable classes
+- Act 1-6 campaign
+- Endgame mapping system
+- Extensive skill tree
+- Trade league and solo self-found modes
+
+**What's Coming:**
+- Additional 6 acts
+- More classes
+- League mechanics
+- Additional endgame content
+- Quality of life improvements
+
+### The New Combat Feel
+
+Combat is notably different from PoE 1. It's slower, more tactical, and emphasizes positioning and timing over pure speed.
+
+**Combat Improvements:**
+- Better telegraphed enemy attacks
+- More impactful hits
+- Dodge roll for active defense
+- Improved visual clarity
+
+### Class Overview
+
+**Available Classes:**
+- **Warrior** - Melee powerhouse with brutal strikes
+- **Ranger** - Agile bow user with tactical advantages
+- **Sorceress** - Elemental caster with devastating spells
+- **Mercenary** - Crossbow specialist with versatility
+- **Monk** - Martial artist with combo-focused gameplay
+- **Witch** - Minion master and chaos spellcaster
+
+### Pricing and Access
+
+**Early Access Options:**
+- **Supporter Packs** starting at $30 (Early Access + cosmetics)
+- **Premium Packs** up to $480 for hardcore fans
+- **Free-to-Play** at full launch (TBA)
+
+**Is Early Access Worth It?**
+- You want to experience development
+- You're a Path of Exile veteran
+- You don't mind bugs and resets
+- You want exclusive supporter cosmetics
+
+### Performance and Optimization
+
+The new engine runs significantly better than PoE 1, with improved frame rates and less stuttering.
+
+**System Requirements:**
+- Minimum: GTX 1050, 8GB RAM
+- Recommended: RTX 3060, 16GB RAM
+- SSD strongly recommended
+- 100GB+ storage space
+
+### Community Reception
+
+Initial reactions are overwhelmingly positive, with players praising the improved combat feel and visual upgrades. Some PoE 1 veterans are adjusting to the slower pace.
+
+**Pros:**
+- Gorgeous graphics
+- Improved combat depth
+- Better new player experience
+- Strong endgame foundation
+
+**Cons:**
+- Some features still missing
+- Occasional bugs and crashes
+- Balance needs work
+- Only half the campaign available
+
+### Should You Buy Early Access?
+
+**Yes, if you:**
+- Love ARPGs and want the latest
+- Enjoyed Path of Exile 1
+- Don't mind supporting development
+- Want to influence development through feedback
+
+**Wait for Full Release If:**
+- You want the complete experience
+- You're new to the genre
+- You prefer polished, finished games
+- You're on a tight budget
+
+### Tips for New Players
+
+1. **Take your time** - Combat is slower, play tactically
+2. **Experiment with skills** - Weapon-based system allows flexibility
+3. **Use dodge roll** - Active defense is crucial
+4. **Read patch notes** - Early Access means frequent changes
+5. **Join the community** - Discord and Reddit are invaluable
+
+### The Road Ahead
+
+Developer Grinding Gear Games has committed to regular updates throughout Early Access, with content drops every few months leading to full launch.
+
+### Our Verdict
+
+Path of Exile 2 in Early Access already feels more polished than many fully released games. If you're an ARPG fan, this is absolutely worth your time and money.
+
+**Early Access Rating: 9/10** - The future of ARPGs looks bright.
+        `
+    },
+    {
+        id: "game-awards-2024-preview",
+        title: "The Game Awards 2024: Predictions and What to Expect",
+        excerpt: "The gaming industry's biggest night is December 13th. Here are our predictions and what world premieres to expect.",
+        category: "Features",
+        date: "December 11, 2024",
+        author: "GameFlex Team",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg",
+        content: `
+## Gaming's Biggest Night Approaches
+
+The Game Awards 2024 takes place on December 13th, celebrating the year's best games while revealing exciting new titles. Here's what to expect.
+
+### Game of the Year Predictions
+
+**The Nominees:**
+The official nominees haven't been announced yet, but based on 2024's releases, expect to see:
+
+- **Baldur's Gate 3** - Still dominating conversations
+- **Elden Ring: Shadow of the Erdtree** - Can DLC win GOTY?
+- **Final Fantasy VII Rebirth** - Square Enix's masterpiece
+- **Metaphor: ReFantazio** - Atlus' latest RPG sensation
+- **Astro Bot** - PlayStation's surprise hit
+
+**Our Prediction:**
+While it's close, we're betting on **Metaphor: ReFantazio** or **Astro Bot** to take the crown, with Baldur's Gate 3 potentially repeating if voters continue showing love.
+
+### Expected World Premieres
+
+**Confirmed Announcements:**
+- Multiple AAA reveals
+- Indie game showcases
+- DLC and expansion announcements
+- Hardware reveals
+
+**Rumored Reveals:**
+- **GTA 6 gameplay** - Rockstar might finally show more
+- **The Witcher 4** - CD Projekt Red teaser possible
+- **Ghost of Tsushima 2** - Sucker Punch's next project
+- **Perfect Dark** - The Initiative's reboot
+- **Silksong** - Hollow Knight fans remain hopeful
+
+### Other Major Categories
+
+**Best Indie Game:**
+- Balatro
+- Animal Well
+- Lorelei and the Laser Eyes
+- Thank Goodness You're Here!
+- 1000xRESIST
+
+**Best Multiplayer:**
+- Helldivers 2
+- Marvel Rivals
+- Final Fantasy XIV: Dawntrail
+- Tekken 8
+- Dragon Ball: Sparking! Zero
+
+**Best Action Game:**
+- Black Myth: Wukong
+- Stellar Blade
+- Prince of Persia: The Lost Crown
+- Warhammer 40K: Space Marine 2
+
+### Musical Performances
+
+Expect live performances from game soundtracks, with rumors of orchestral renditions from nominated games and possible celebrity appearances.
+
+### How to Watch
+
+**Streaming Options:**
+- YouTube (main stream)
+- Twitch
+- X (Twitter)
+- TikTok
+- All major gaming platforms
+
+**Timing:**
+- December 13, 2024
+- 7:30 PM ET / 4:30 PM PT
+- Pre-show starts 30 minutes earlier
+
+### Why You Should Watch
+
+**Beyond Awards:**
+1. **World Premiere Trailers** - Often worth more than the awards
+2. **Community Celebration** - The gaming industry comes together
+3. **Surprise Announcements** - Geoff Keighley always has tricks up his sleeve
+4. **Free Game Giveaways** - Watch parties often include prize drops
+
+### Drinking Game (Responsibly!)
+
+Take a sip when:
+- Geoff says "world premiere"
+- An award winner thanks their family
+- Technical difficulties occur
+- A trailer gives you goosebumps
+- A game you've never heard of gets announced
+
+### Post-Show Expectations
+
+After the main show, expect:
+- Extended gameplay demos
+- Developer interviews
+- Community reactions and analysis
+- Steam sales on nominated games
+
+### Our Hot Takes
+
+**Bold Predictions:**
+1. A major franchise will get a surprise reveal
+2. At least one VR game will win a category
+3. An indie game will steal the spotlight
+4. The show will run over 3 hours (it always does)
+5. Someone will make a viral moment
+
+### Mark Your Calendar
+
+Beyond The Game Awards, December also features:
+- **The Indie Game Awards** - December 20th
+- **Various publisher showcases**
+- **End-of-year sales** across all platforms
+
+### Community Participation
+
+**Get Involved:**
+- Vote for Player's Voice Award
+- Join watch parties on Discord
+- Follow #TheGameAwards on social media
+- Participate in prediction contests
+
+### Our Excitement Level
+
+The Game Awards has become gaming's Super Bowl - a celebration of the medium, a hype machine for future releases, and a community event all rolled into one.
+
+### Final Thoughts
+
+Whether you care about the awards or just want to see new game announcements, The Game Awards 2024 promises to be unmissable. Clear your schedule for December 13th!
+
+**Hype Rating: 10/10** - Gaming's biggest night is almost here!
+        `
+    },
+    {
         id: "gaming-pc-build-2024",
         title: "Best Gaming PC Build for Every Budget in 2024",
         excerpt: "Whether you have $500 or $2000, we'll show you how to build the perfect gaming PC that maximizes performance for your budget.",
@@ -214,7 +748,7 @@ Both are excellent devices - you can't go wrong with either!
         excerpt: "Looking for your next gaming obsession? These multiplayer games will keep you and your friends entertained for hundreds of hours.",
         category: "Features",
         date: "May 16, 2024",
-        author: "GameZone Team",
+        author: "GameFlex Team",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
         content: `
 ## Gaming is Better with Friends
@@ -451,7 +985,7 @@ The service is evolving, and while it's still great, it's no longer perfect. Eva
         excerpt: "From Elden Ring's DLC to the latest Final Fantasy, we rank the best role-playing games you need to experience this year.",
         category: "Features",
         date: "May 15, 2024",
-        author: "GameZone Team",
+        author: "GameFlex Team",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg",
         content: `
 ## The Golden Age of RPGs Continues

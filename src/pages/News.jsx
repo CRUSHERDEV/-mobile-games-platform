@@ -9,8 +9,8 @@ const News = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
             <Helmet>
-                <title>Gaming News & Articles - GameZone</title>
-                <meta name="description" content="Stay updated with the latest gaming news, features, and editorials from the GameZone team." />
+                <title>Gaming News & Articles - GameFlex</title>
+                <meta name="description" content="Stay updated with the latest gaming news, features, and editorials from the GameFlex team." />
             </Helmet>
 
             <motion.div

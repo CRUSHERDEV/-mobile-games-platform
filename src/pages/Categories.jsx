@@ -66,8 +66,8 @@ const Categories = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
             <Helmet>
-                <title>Game Categories - GameZone</title>
-                <meta name="description" content="Browse games by category: Action, RPG, Strategy, and more. Find your next favorite game on GameZone." />
+                <title>Game Categories - GameFlex</title>
+                <meta name="description" content="Browse games by category: Action, RPG, Strategy, and more. Find your next favorite game on GameFlex." />
             </Helmet>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

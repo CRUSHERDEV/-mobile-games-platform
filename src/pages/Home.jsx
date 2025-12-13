@@ -110,8 +110,8 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>GameZone - Best Gaming Reviews & Deals</title>
-                <meta name="description" content="Discover top-rated games, exclusive deals, and expert reviews at GameZone. Your ultimate destination for gaming offers." />
+                <title>GameFlex - Best Gaming Reviews & Deals</title>
+                <meta name="description" content="Discover top-rated games, exclusive deals, and expert reviews at GameFlex. Your ultimate destination for gaming offers." />
             </Helmet>
             <Hero />
 

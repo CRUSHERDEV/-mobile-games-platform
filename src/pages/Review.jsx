@@ -83,7 +83,7 @@ const Review = () => {
     return (
         <div className="container" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
             <Helmet>
-                <title>{game.title} Review - GameZone</title>
+                <title>{game.title} Review - GameFlex</title>
                 <meta name="description" content={`Read our expert review of ${game.title}. ${game.description ? game.description.substring(0, 150) : ''}...`} />
             </Helmet>
             <Link to="/" className="btn btn-outline" style={{ marginBottom: '2rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
