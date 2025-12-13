@@ -102,7 +102,27 @@ Your site: `https://your-site-name.netlify.app`
 
 ---
 
-## 🤖 Part 2: Automating Daily Blog Posts
+## ⚡ Part 2: Deploying Backend Functions (Supabase)
+
+If you modify the email logic or other backend features in `supabase/functions`, you must deploy them separately.
+
+### Prerequisites:
+- Supabase CLI installed
+- Logged in to Supabase (`supabase login`)
+
+### Deployment Command:
+To update your "subscribe" function (Newsletter email):
+
+```bash
+# Deploy the specific function
+supabase functions deploy subscribe --no-verify-jwt
+```
+
+**Note:** This is *required* for your custom email template to take effect. Pushing to GitHub only updates the frontend website, not the backend functions.
+
+---
+
+## 🤖 Part 3: Automating Daily Blog Posts
 
 ### Method 1: Semi-Automated CLI Tool (Easiest)
 
