@@ -2,7 +2,28 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: http://localhost:5173/sitemap.xml
+Sitemap: https://your-domain.com/sitemap.xml
 
-# Disallow admin/auth pages
-Disallow: /welcome
+# Disallow admin/private areas (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /.git/
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
