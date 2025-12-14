@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Gamepad2, Instagram, Github } from 'lucide-react';
+import { Gamepad2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
 import { trackNewsletterSignup } from '../utils/analytics';
@@ -136,8 +136,6 @@ const Footer = () => {
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>© 2024 GameFlex. All rights reserved.</p>
                     <div style={{ display: 'flex', gap: '1rem' }}>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }} aria-label="Instagram"><Instagram size={20} /></a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }} aria-label="GitHub"><Github size={20} /></a>
                     </div>
                 </div>
             </div>
