@@ -30,14 +30,19 @@ const Footer = () => {
                 throw dbError;
             }
 
-            // 2. Call Edge Function to send email
+            // 2. Call Vercel Serverless Function to send email
             // Note: We do this optimistically. If email fails, we still subscribed them.
-            const { error: funcError } = await supabase.functions.invoke('subscribe', {
-                body: { email }
+            const response = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email }),
             });
 
-            if (funcError) {
-                console.warn('Email sending failed:', funcError);
+            if (!response.ok) {
+                const errorData = await response.json();
+                console.warn('Email sending failed:', errorData);
                 // We don't fail the whole process if just the email fails, 
                 // but you might want to log it or handle it differently.
             }
