@@ -261,8 +261,8 @@ async function findArticleImage(newsItem) {
         return 'https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg';
     }
 
-    // Use Unsplash random gaming image
-    return `https://source.unsplash.com/1600x900/?gaming,videogames&sig=${Date.now()}`;
+    // Use reliable placeholder service with brand colors since Unsplash Source is deprecated
+    return `https://placehold.co/1200x630/121212/00ff9d?text=Gaming+News&font=roboto`;
 }
 
 /**
