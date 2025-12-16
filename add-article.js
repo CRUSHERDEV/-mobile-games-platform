@@ -1,5 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Configuration
 const ARTICLES_FILE = path.join(__dirname, 'src', 'data', 'articles.js');
@@ -77,12 +82,12 @@ function addArticle(articleData) {
  * Interactive CLI for adding articles
  */
 async function interactiveAdd() {
-    const readline = require('readline').createInterface({
+    const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
     });
 
-    const question = (query) => new Promise((resolve) => readline.question(query, resolve));
+    const question = (query) => new Promise((resolve) => rl.question(query, resolve));
 
     console.log('\n🎮 GameFlex Daily Blog Post Generator\n');
     console.log('📰 News Sources to check:');
@@ -100,11 +105,11 @@ async function interactiveAdd() {
         console.log('    Type your content. Press Ctrl+D (Linux/Mac) or Ctrl+Z (Windows) when done:\n');
 
         let content = '';
-        readline.on('line', (line) => {
+        rl.on('line', (line) => {
             content += line + '\n';
         });
 
-        readline.on('close', () => {
+        rl.on('close', () => {
             if (!content.trim()) {
                 content = `## ${title}
 
@@ -137,7 +142,7 @@ Your analysis and opinion here.`;
 
     } catch (error) {
         console.error('Error:', error);
-        readline.close();
+        rl.close();
     }
 }
 
@@ -174,7 +179,8 @@ Stay tuned for more updates!`;
 }
 
 // Command line interface
-if (require.main === module) {
+// Command line interface
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const args = process.argv.slice(2);
 
     if (args.length === 0) {
@@ -190,4 +196,4 @@ if (require.main === module) {
     }
 }
 
-module.exports = { addArticle, generateArticle, quickAdd };
+export { addArticle, generateArticle, quickAdd };

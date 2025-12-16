@@ -25,6 +25,9 @@ const Footer = () => {
                     // or just show success. Let's show success.
                     setStatus('success');
                     setEmail('');
+                    // User is already in DB, but we can still trigger the welcome email if we want.
+                    // For now, we will just treat it as a success to not confuse the user.
+                    // If you want to resend the welcome email, remove the return statement.
                     return;
                 }
                 throw dbError;

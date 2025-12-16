@@ -1,5 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Fully Automated Blog Post Generator
@@ -10,7 +14,7 @@ const path = require('path');
 const CONFIG = {
     ARTICLES_FILE: path.join(__dirname, 'src', 'data', 'articles.js'),
     NEWS_API_KEY: process.env.NEWS_API_KEY || '', // Get from newsapi.org
-    OPENAI_API_KEY: process.env.OPENAI_API_KEY || '', // Get from openai.com
+    GEMINI_API_KEY: process.env.GEMINI_API_KEY || '', // Get from aistudio.google.com
     STEAM_API_KEY: process.env.STEAM_API_KEY || '', // Get from steamcommunity.com/dev/apikey
 };
 
@@ -75,27 +79,16 @@ async function fetchFromRSS() {
 }
 
 /**
- * Generate professional article using AI
+ * Generate professional article using AI (Gemini)
  */
 async function generateArticleContent(newsItem) {
-    if (!CONFIG.OPENAI_API_KEY) {
-        console.log('⚠️  No OpenAI API key found. Using template content.');
+    if (!CONFIG.GEMINI_API_KEY) {
+        console.log('⚠️  No Gemini API key found. Using template content.');
         return generateTemplateContent(newsItem);
     }
 
     try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${CONFIG.OPENAI_API_KEY}`
-            },
-            body: JSON.stringify({
-                model: 'gpt-4o-mini', // Cheaper and faster
-                messages: [
-                    {
-                        role: 'system',
-                        content: `You are an SEO-expert gaming journalist writing for GameFlex (gameflexhub.com), a growing gaming news website targeting Google rankings.
+        const systemPrompt = `You are an SEO-expert gaming journalist writing for GameFlex (gameflexhub.com), a growing gaming news website targeting Google rankings.
 
 CRITICAL SEO REQUIREMENTS:
 - Target LONG-TAIL KEYWORDS (e.g., "best free RPG games 2024", "[game name] complete guide")
@@ -137,30 +130,37 @@ Structure Requirements:
 - Practical advice
 - Actionable insights
 
-Use gaming terminology naturally. Make it informative, engaging, and SEO-friendly. Focus on long-tail keywords that can rank quickly.`
-                    },
-                    {
-                        role: 'user',
-                        content: `Write an SEO-optimized gaming article about: ${newsItem.title}
+Use gaming terminology naturally. Make it informative, engaging, and SEO-friendly. Focus on long-tail keywords that can rank quickly.`;
+
+        const userPrompt = `Write an SEO-optimized gaming article about: ${newsItem.title}
 
 Context: ${newsItem.description || newsItem.title}
 
 Source: ${newsItem.source || 'Gaming News'}
 
-Target a long-tail keyword related to this topic. Make it rank-worthy for Google.`
-                    }
-                ],
-                temperature: 0.7,
-                max_tokens: 1200
+Target a long-tail keyword related to this topic. Make it rank-worthy for Google.`;
+
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${CONFIG.GEMINI_API_KEY}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{
+                        text: systemPrompt + "\n\n" + userPrompt
+                    }]
+                }]
             })
         });
 
         const data = await response.json();
 
-        if (data.choices && data.choices[0] && data.choices[0].message) {
-            return data.choices[0].message.content;
+        if (data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) {
+            return data.candidates[0].content.parts[0].text;
         }
 
+        console.error('Gemini API Error Response:', JSON.stringify(data, null, 2));
         return generateTemplateContent(newsItem);
 
     } catch (error) {
@@ -391,14 +391,16 @@ async function automateDaily() {
 }
 
 // Run if called directly
-if (require.main === module) {
+// Run if called directly
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
     automateDaily().then(result => {
         if (result.success) {
             process.exit(0);
         } else {
+            console.error('Automation failed');
             process.exit(1);
         }
     });
 }
 
-module.exports = { automateDaily, fetchGamingNews, generateArticleContent, addArticleToFile };
+export { automateDaily, fetchGamingNews, generateArticleContent, addArticleToFile };

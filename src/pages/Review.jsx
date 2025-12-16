@@ -239,11 +239,86 @@ const Review = () => {
                             Download Now <Download size={18} />
                         </a>
 
+                        {/* Cheat Sheet / Guide Locker */}
+                        <div style={{
+                            marginTop: '2rem',
+                            background: 'linear-gradient(145deg, #1e293b, #0f172a)',
+                            borderRadius: 'var(--radius-md)',
+                            border: '1px solid rgba(0, 255, 157, 0.2)',
+                            overflow: 'hidden'
+                        }}>
+                            <div style={{ padding: '1.5rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                                <div style={{
+                                    textTransform: 'uppercase',
+                                    fontSize: '0.75rem',
+                                    letterSpacing: '0.1em',
+                                    color: 'var(--color-primary)',
+                                    marginBottom: '0.5rem',
+                                    fontWeight: 'bold'
+                                }}>
+                                    Exclusive Content
+                                </div>
+                                <h4 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                                    <span role="img" aria-label="lock">🔒</span> Ultimate Cheat Sheet
+                                </h4>
+                                <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                                    Unlock hidden items, god mode, and infinite money glitches.
+                                </p>
+                            </div>
+
+                            <div style={{ position: 'relative', padding: '1.5rem' }}>
+                                {/* Blurred Content Preview */}
+                                <div style={{
+                                    filter: 'blur(4px)',
+                                    opacity: 0.5,
+                                    fontSize: '0.8rem',
+                                    fontFamily: 'monospace',
+                                    lineHeight: '1.6',
+                                    userSelect: 'none',
+                                    pointerEvents: 'none'
+                                }}>
+                                    <div>[GOD MODE]: Up, Up, Down, Down...</div>
+                                    <div>[INF MONEY]: L1, R1, Square, R...</div>
+                                    <div>[ALL WEAPONS]: Triangle, R2, Left...</div>
+                                    <div>[NO CLIP]: Console /noclip_mode...</div>
+                                </div>
+
+                                {/* Overlay Button */}
+                                <div style={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    background: 'rgba(15, 23, 42, 0.6)'
+                                }}>
+                                    <button
+                                        onClick={() => alert('This would open your CPA/OGAds Content Locker!')}
+                                        className="btn"
+                                        style={{
+                                            background: 'var(--color-primary)',
+                                            color: '#000',
+                                            fontWeight: 'bold',
+                                            padding: '10px 20px',
+                                            fontSize: '0.9rem',
+                                            boxShadow: '0 0 20px rgba(0, 255, 157, 0.4)',
+                                            animation: 'pulse 2s infinite'
+                                        }}
+                                    >
+                                        UNLOCK NOW
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                         {embedUrl && (
                             <button
                                 onClick={() => setShowTrailerModal(true)}
                                 className="btn btn-outline"
-                                style={{ width: '100%', marginBottom: '1rem' }}
+                                style={{ width: '100%', marginTop: '1rem', marginBottom: '1rem' }}
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <polygon points="5 3 19 12 5 21 5 3"></polygon>
