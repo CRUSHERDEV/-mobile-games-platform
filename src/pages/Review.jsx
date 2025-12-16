@@ -259,10 +259,10 @@ const Review = () => {
                                     Exclusive Content
                                 </div>
                                 <h4 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
-                                    <span role="img" aria-label="lock">🔒</span> Ultimate Cheat Sheet
+                                    <span role="img" aria-label="lock">🔒</span> {game.cheatSheet?.title || "Ultimate Guide & Cheats"}
                                 </h4>
                                 <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                                    Unlock hidden items, god mode, and infinite money glitches.
+                                    {game.cheatSheet?.content || "Unlock hidden items, strategies, and exclusive bonuses."}
                                 </p>
                             </div>
 
@@ -277,10 +277,14 @@ const Review = () => {
                                     userSelect: 'none',
                                     pointerEvents: 'none'
                                 }}>
-                                    <div>[GOD MODE]: Up, Up, Down, Down...</div>
-                                    <div>[INF MONEY]: L1, R1, Square, R...</div>
-                                    <div>[ALL WEAPONS]: Triangle, R2, Left...</div>
-                                    <div>[NO CLIP]: Console /noclip_mode...</div>
+                                    {(game.cheatSheet?.preview || [
+                                        "[HIDDEN ITEM]: Location unknown...",
+                                        "[SECRET BOSS]: Unlock requirements...",
+                                        "[MAX LEVEL]: Farm XP fast...",
+                                        "[BEST BUILD]: Optimal loadout..."
+                                    ]).map((line, i) => (
+                                        <div key={i}>{line}</div>
+                                    ))}
                                 </div>
 
                                 {/* Overlay Button */}

@@ -14,7 +14,17 @@ export const GAMES = [
         trailerUrl: "https://www.youtube.com/watch?v=QkkoHAzjnUs",
         description: "Grand Theft Auto V offers an expansive, immersive open world that sets a new standard for the genre. Set in the fictional state of San Andreas, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency and powerful crime figures. The attention to detail is staggering, from the bustling city streets of Los Santos to the serene wilderness of Blaine County.",
         pros: ["Massive, detailed open world", "Three distinct playable characters", "Incredible variety of missions", "Polished gameplay mechanics"],
-        cons: ["Online mode can be grindy", "Loading times can be long"]
+        cons: ["Online mode can be grindy", "Loading times can be long"],
+        cheatSheet: {
+            title: "Ultimate Cheat Codes Pack",
+            preview: [
+                "[INVINCIBILITY]: Right, X, Right, Left, Right...",
+                "[MAX HEALTH]: Circle, L1, Triangle, R2...",
+                "[WEAPONS]: Triangle, R2, Left, L1, X...",
+                "[SUPER JUMP]: Left, Left, Triangle, Triangle..."
+            ],
+            content: "Full list of verified cheat codes for PS5, Xbox, and PC."
+        }
     },
     {
         id: "rdr2",
@@ -25,7 +35,17 @@ export const GAMES = [
         trailerUrl: "https://www.youtube.com/watch?v=eaW0tYpxyp0",
         description: "Red Dead Redemption 2 is a sprawling tale of life in America at the dawn of the modern age. Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.",
         pros: ["Breathtaking visual fidelity", "Deep, emotional storytelling", "Realistic world interaction", "Huge amount of content"],
-        cons: ["Pacing can be slow for some", "Controls can feel heavy"]
+        cons: ["Pacing can be slow for some", "Controls can feel heavy"],
+        cheatSheet: {
+            title: "Outlaw Survival Guide",
+            preview: [
+                "[0.00] INFINITE AMMO: Cheat Code...",
+                "[0.00] SPAWN WAR HORSE: Cheat Code...",
+                "[0.00] FOG OF WAR: Map Reveal...",
+                "[0.00] HIGH HONOR: Stat Boost..."
+            ],
+            content: "Complete list of newspaper cheat codes and legendary animal locations."
+        }
     },
     {
         id: "gow-2018",
@@ -36,7 +56,17 @@ export const GAMES = [
         trailerUrl: "https://www.youtube.com/watch?v=K0u_kAWLJOA",
         description: "His vengeance against the Gods of Olympus years behind him, Kratos now lives as a man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same. This startling reimagining of God of War deconstructs the core elements that defined the series—satisfying combat; breathtaking scale; and a powerful narrative—and fuses them anew.",
         pros: ["Incredible one-shot camera direction", "Satisfying, visceral combat", "Touching father-son narrative", "Stunning art direction"],
-        cons: ["Limited enemy variety in early game", "Fast travel opens up late"]
+        cons: ["Limited enemy variety in early game", "Fast travel opens up late"],
+        cheatSheet: {
+            title: "Valkyrie Location Map",
+            preview: [
+                "[HIGHLANDS]: Hidden Chamber Location...",
+                "[RIVER PASS]: Odin's Raven Guide...",
+                "[NIFLHEIM]: Mist Armor Stats...",
+                "[MUSPELHEIM]: Trial Strategies..."
+            ],
+            content: "Interactive map of all Odin's Ravens and Valkyrie strategies."
+        }
     },
     {
         id: "spiderman-ps4",
@@ -47,7 +77,17 @@ export const GAMES = [
         trailerUrl: "https://www.youtube.com/watch?v=bbFhcztiFK8",
         description: "In Marvel’s Spider-Man Remastered, the worlds of Peter Parker and Spider-Man collide in an original action-packed story. Play as an experienced Peter Parker, fighting big crime and iconic villains in Marvel’s New York. Web-swing through vibrant neighborhoods and defeat villains with epic takedowns.",
         pros: ["Exhilarating web-swinging traversal", "Faithful recreation of NYC", "Fluid combat system", "Great voice acting"],
-        cons: ["Side activities can get repetitive", "Boss fights are scripted"]
+        cons: ["Side activities can get repetitive", "Boss fights are scripted"],
+        cheatSheet: {
+            title: "Suit Unlock Guide",
+            preview: [
+                "[VINTAGE SUIT]: Level requirement...",
+                "[DARK SUIT]: Black Cat Stakeouts...",
+                "[HOMEMADE SUIT]: Backpack Token costs...",
+                "[IRON SPIDER]: Story progression..."
+            ],
+            content: "Requirements for unlocking every suit and gadget upgrade."
+        }
     },
     {
         id: "dmc5",

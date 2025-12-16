@@ -8,7 +8,7 @@ export const articles = [
         author: "GameFlex Team",
         image: "https://placehold.co/1200x630/121212/00ff9d?text=Gaming+News&font=roboto",
         content: `
-## [MEGATHREAD] The Game Awards 2025 - Complete Coverage 2024
+## [MEGATHREAD] The Game Awards 2025 - Complete Coverage 2025
 
 The gaming community is buzzing with the latest The Game Awards news. Here's everything you need to know about this exciting development.
 
@@ -72,11 +72,11 @@ Stay tuned to GameFlex for comprehensive coverage, expert analysis, and the late
     },
 
     {
-        id: "legacy-of-kain-remastered-2024",
+        id: "legacy-of-kain-remastered-2025",
         title: "Legacy of Kain: Soul Reaver 1 & 2 Remastered Launches Today",
         excerpt: "The iconic action-adventure series returns with enhanced graphics and updated gameplay across all major platforms.",
         category: "News",
-        date: "December 11, 2024",
+        date: "December 11, 2025",
         author: "GameFlex Team",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2370620/header.jpg",
         content: `
@@ -133,11 +133,11 @@ This remaster preserves what made the original games special while making them a
         `
     },
     {
-        id: "power-rangers-ritas-rewind-2024",
+        id: "power-rangers-ritas-rewind-2025",
         title: "Mighty Morphin Power Rangers: Rita's Rewind - Nostalgia Done Right",
         excerpt: "A nostalgic side-scrolling 2D brawler brings the Power Rangers back to their 90s roots with style.",
         category: "Reviews",
-        date: "December 11, 2024",
+        date: "December 11, 2025",
         author: "Sarah Chen",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2201070/header.jpg",
         content: `
@@ -212,11 +212,11 @@ Rita's Rewind is exactly what a Power Rangers game should be - fun, colorful, an
         `
     },
     {
-        id: "marvel-rivals-december-2024",
+        id: "marvel-rivals-december-2025",
         title: "Marvel Rivals: The Free-to-Play Hero Shooter Taking Over December",
         excerpt: "Marvel's answer to Overwatch is here, and it's completely free. Here's everything you need to know about the game everyone's playing.",
         category: "Features",
-        date: "December 11, 2024",
+        date: "December 11, 2025",
         author: "Alex Martinez",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2767030/header.jpg",
         content: `
@@ -323,7 +323,7 @@ With support from NetEase and Marvel, the game has a promising esports future wi
 
 ### Our Verdict
 
-Marvel Rivals is the best superhero game of 2024 and a legitimate Overwatch competitor. Being free-to-play with no pay-to-win elements makes it a must-try for any multiplayer fan.
+Marvel Rivals is the best superhero game of 2025 and a legitimate Overwatch competitor. Being free-to-play with no pay-to-win elements makes it a must-try for any multiplayer fan.
 
 **Rating: 9/10** - Marvel magic meets competitive excellence.
         `
@@ -333,7 +333,7 @@ Marvel Rivals is the best superhero game of 2024 and a legitimate Overwatch comp
         title: "Path of Exile 2 Early Access: Everything You Need to Know",
         excerpt: "The highly anticipated ARPG sequel enters Early Access this December. Is it worth jumping in now or should you wait?",
         category: "Preview",
-        date: "December 11, 2024",
+        date: "December 11, 2025",
         author: "Mike Rodriguez",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2694490/header.jpg",
         content: `
@@ -464,22 +464,22 @@ Path of Exile 2 in Early Access already feels more polished than many fully rele
         `
     },
     {
-        id: "game-awards-2024-preview",
-        title: "The Game Awards 2024: Predictions and What to Expect",
+        id: "game-awards-2025-preview",
+        title: "The Game Awards 2025: Predictions and What to Expect",
         excerpt: "The gaming industry's biggest night is December 13th. Here are our predictions and what world premieres to expect.",
         category: "Features",
-        date: "December 11, 2024",
+        date: "December 11, 2025",
         author: "GameFlex Team",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg",
         content: `
 ## Gaming's Biggest Night Approaches
 
-The Game Awards 2024 takes place on December 13th, celebrating the year's best games while revealing exciting new titles. Here's what to expect.
+The Game Awards 2025 takes place on December 13th, celebrating the year's best games while revealing exciting new titles. Here's what to expect.
 
 ### Game of the Year Predictions
 
 **The Nominees:**
-The official nominees haven't been announced yet, but based on 2024's releases, expect to see:
+The official nominees haven't been announced yet, but based on 2025's releases, expect to see:
 
 - **Baldur's Gate 3** - Still dominating conversations
 - **Elden Ring: Shadow of the Erdtree** - Can DLC win GOTY?
@@ -541,7 +541,7 @@ Expect live performances from game soundtracks, with rumors of orchestral rendit
 - All major gaming platforms
 
 **Timing:**
-- December 13, 2024
+- December 13, 2025
 - 7:30 PM ET / 4:30 PM PT
 - Pre-show starts 30 minutes earlier
 
@@ -600,23 +600,23 @@ The Game Awards has become gaming's Super Bowl - a celebration of the medium, a 
 
 ### Final Thoughts
 
-Whether you care about the awards or just want to see new game announcements, The Game Awards 2024 promises to be unmissable. Clear your schedule for December 13th!
+Whether you care about the awards or just want to see new game announcements, The Game Awards 2025 promises to be unmissable. Clear your schedule for December 13th!
 
 **Hype Rating: 10/10** - Gaming's biggest night is almost here!
         `
     },
     {
-        id: "gaming-pc-build-2024",
-        title: "Best Gaming PC Build for Every Budget in 2024",
+        id: "gaming-pc-build-2025",
+        title: "Best Gaming PC Build for Every Budget in 2025",
         excerpt: "Whether you have $500 or $2000, we'll show you how to build the perfect gaming PC that maximizes performance for your budget.",
         category: "Hardware",
-        date: "May 20, 2024",
+        date: "May 20, 2025",
         author: "Mike Rodriguez",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg",
         content: `
 ## Building Your Dream Gaming PC
 
-The PC gaming market in 2024 offers incredible value across all price points. Here's our comprehensive guide to building the perfect gaming rig for your budget.
+The PC gaming market in 2025 offers incredible value across all price points. Here's our comprehensive guide to building the perfect gaming rig for your budget.
 
 ### Budget Build ($500-$700)
 
@@ -679,7 +679,7 @@ The PC gaming market in 2024 offers incredible value across all price points. He
 
 ### Conclusion
 
-Building a PC is easier than ever in 2024. With these builds, you'll get excellent gaming performance without overspending. Remember: you can always upgrade later!
+Building a PC is easier than ever in 2025. With these builds, you'll get excellent gaming performance without overspending. Remember: you can always upgrade later!
         `
     },
     {
@@ -687,7 +687,7 @@ Building a PC is easier than ever in 2024. With these builds, you'll get excelle
         title: "Steam Deck vs ROG Ally: Which Handheld Should You Buy?",
         excerpt: "Both are excellent handheld gaming PCs, but which one is right for you? We compare specs, performance, and value.",
         category: "Hardware",
-        date: "May 18, 2024",
+        date: "May 18, 2025",
         author: "Sarah Chen",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1675200/header.jpg",
         content: `

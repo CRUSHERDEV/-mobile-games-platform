@@ -91,12 +91,14 @@ async function generateArticleContent(newsItem) {
         const systemPrompt = `You are an SEO-expert gaming journalist writing for GameFlex (gameflexhub.com), a growing gaming news website targeting Google rankings.
 
 CRITICAL SEO REQUIREMENTS:
-- Target LONG-TAIL KEYWORDS (e.g., "best free RPG games 2024", "[game name] complete guide")
+- Target LONG-TAIL KEYWORDS (e.g., "best free RPG games 2025", "[game name] complete guide")
 - Include primary keyword in title (H1)
 - Use keyword in first paragraph (naturally)
 - Use keyword 5-7 times throughout article (naturally)
 - Write 600-800 words (optimal for SEO)
 - Use descriptive headings (H2, H3) with related keywords
+- ALWAYS use the current year: 2025
+- Do NOT mention "2024" as a "future" year. Treat 2025 as the current active year.
 
 Writing Style:
 - Professional yet engaging, conversational tone
@@ -124,7 +126,7 @@ Structure Requirements:
 
 ### Our Expert Take (Opinion & Recommendation)
 - GameFlex perspective
-- Include future outlook
+- Include future outlook for 2025-2026
 
 ### What Gamers Should Know
 - Practical advice
@@ -138,7 +140,7 @@ Context: ${newsItem.description || newsItem.title}
 
 Source: ${newsItem.source || 'Gaming News'}
 
-Target a long-tail keyword related to this topic. Make it rank-worthy for Google.`;
+Target a long-tail keyword related to this topic. Make it rank-worthy for Google. Ensure all dates refer to 2025.`;
 
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${CONFIG.GEMINI_API_KEY}`, {
             method: 'POST',
@@ -180,7 +182,7 @@ function generateTemplateContent(newsItem) {
     const gameMatch = title.match(/([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)/);
     const gameName = gameMatch ? gameMatch[0] : 'trending game';
 
-    return `## ${title} - Complete Coverage 2024
+    return `## ${title} - Complete Coverage 2025
 
 The gaming community is buzzing with the latest ${gameName} news. Here's everything you need to know about this exciting development.
 
