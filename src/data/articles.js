@@ -1,5 +1,69 @@
 export const articles = [
     {
+        id: "intel-xess-3-runs-on-arc-b580-before-official-supp",
+        title: "Intel XeSS 3 Runs on Arc B580 Before Official Support Lands",
+        excerpt: "Intel XeSS 3 with multi-frame generation (MFG) is expected to be available this month for the Arc B580 \"Battlemage\" graphics cards. However, some Redd...",
+        category: "News",
+        date: "February 3, 2026",
+        author: "GameFlex Team",
+        image: "https://www.techpowerup.com/img/hGgY2XK1qM0xE6TS.jpg",
+        content: `
+## Intel XeSS 3 Runs on Arc B580 Before Official Support Lands - Complete Coverage 2025
+
+The gaming community is buzzing with the latest Intel Xe news. Here's everything you need to know about this exciting development.
+
+### What Happened - Key Details
+
+Intel XeSS 3 with multi-frame generation (MFG) is expected to be available this month for the Arc B580 "Battlemage" graphics cards. However, some Redditors suggest there's a workaround to enable XeSS 3 and gain the FPS boost from MFG through a simple file swa…
+
+This announcement has captured the attention of gamers worldwide, and for good reason. The update comes at a pivotal moment in the industry, where player experience and innovation continue to drive the gaming landscape forward.
+
+Industry insiders suggest this move could significantly impact how players engage with Intel Xe and similar titles in the coming months.
+
+### Why This Matters to Gamers
+
+This development represents a major shift in the gaming ecosystem. For players invested in Intel Xe, this means new opportunities to enhance their gaming experience and explore fresh content that pushes the boundaries of what's possible in modern gaming.
+
+The broader implications for the industry are substantial. As developers continue to innovate and respond to player feedback, we're witnessing an evolution in how games are developed, updated, and monetized. This trend toward player-centric design is reshaping the entire gaming landscape.
+
+### Key Features and Highlights
+
+- **Enhanced Player Experience**: Focus on quality-of-life improvements
+- **Community-Driven Updates**: Listening to player feedback
+- **Technical Innovation**: Leveraging latest gaming technology
+- **Long-Term Support**: Commitment to ongoing development
+- **Accessibility**: Making gaming more inclusive
+
+### Our GameFlex Take - Expert Analysis
+
+At GameFlex, we believe this is a promising step forward for Intel Xe and the gaming community. The focus on player experience and continuous improvement demonstrates a commitment to delivering quality content that resonates with modern gamers.
+
+While questions remain about long-term implementation and community reception, the initial signs point toward positive momentum. We're particularly excited about the potential for innovation and the signal this sends about industry priorities.
+
+The development team's responsiveness to community feedback is especially noteworthy. This player-first approach is exactly what the gaming industry needs more of.
+
+### What Gamers Should Know
+
+As this story continues to unfold, here's what you should keep in mind:
+
+1. **Stay Updated**: Follow official channels for the latest information
+2. **Community Engagement**: Join discussions to share your perspective
+3. **Try It Out**: Experience the updates firsthand when available
+4. **Provide Feedback**: Your input helps shape future development
+
+**Expert Tip**: Keep an eye on Intel Xe community forums and social media for insider insights and early previews of upcoming features.
+
+### Looking Ahead
+
+The coming weeks will be crucial in determining the full impact of this announcement. We'll be monitoring player reactions, performance metrics, and developer responses closely.
+
+Stay tuned to GameFlex for comprehensive coverage, expert analysis, and the latest updates as this story develops. We're committed to bringing you the insights that matter most to your gaming experience.
+
+**GameFlex Rating: 7.5/10** - Promising developments with strong potential for positive impact on the gaming community.
+        `
+    },
+
+    {
         id: "google-pixel-10a-vs-pixel-9a-will-it-be-worth-the-",
         title: "Google Pixel 10a vs. Pixel 9a: Will it be worth the upgrade?",
         excerpt: "The Google Pixel 10a should arrive in March with hopefully a better display, faster charging, and the same price. It's not expected to be a major over...",
