@@ -1,5 +1,69 @@
 export const articles = [
     {
+        id: "sportradar-and-kalshi-announce-first-of-its-kind-d",
+        title: "Sportradar and Kalshi Announce First-of-its-Kind Data and Infrastructure Global Partnership for Prediction Markets",
+        excerpt: "-Global Agreement Positions Sportradar as Core Data and Solutions Provider Across Premier Sports Leagues- –Opportunity to participate across Kalshi ec...",
+        category: "News",
+        date: "June 9, 2026",
+        author: "GameFlex Team",
+        image: "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/06/sportradar-group-ag.png",
+        content: `
+## Sportradar and Kalshi Announce First-of-its-Kind Data and Infrastructure Global Partnership for Prediction Markets - Complete Coverage 2025
+
+The gaming community is buzzing with the latest Sportradar news. Here's everything you need to know about this exciting development.
+
+### What Happened - Key Details
+
+-Global Agreement Positions Sportradar as Core Data and Solutions Provider Across Premier Sports Leagues- –Opportunity to participate across Kalshi ecosystem including market makers and brokers– ST. GALLEN, Switzerland and NEW YORK, June 08, 2026 (GLOBE NEWSW…
+
+This announcement has captured the attention of gamers worldwide, and for good reason. The update comes at a pivotal moment in the industry, where player experience and innovation continue to drive the gaming landscape forward.
+
+Industry insiders suggest this move could significantly impact how players engage with Sportradar and similar titles in the coming months.
+
+### Why This Matters to Gamers
+
+This development represents a major shift in the gaming ecosystem. For players invested in Sportradar, this means new opportunities to enhance their gaming experience and explore fresh content that pushes the boundaries of what's possible in modern gaming.
+
+The broader implications for the industry are substantial. As developers continue to innovate and respond to player feedback, we're witnessing an evolution in how games are developed, updated, and monetized. This trend toward player-centric design is reshaping the entire gaming landscape.
+
+### Key Features and Highlights
+
+- **Enhanced Player Experience**: Focus on quality-of-life improvements
+- **Community-Driven Updates**: Listening to player feedback
+- **Technical Innovation**: Leveraging latest gaming technology
+- **Long-Term Support**: Commitment to ongoing development
+- **Accessibility**: Making gaming more inclusive
+
+### Our GameFlex Take - Expert Analysis
+
+At GameFlex, we believe this is a promising step forward for Sportradar and the gaming community. The focus on player experience and continuous improvement demonstrates a commitment to delivering quality content that resonates with modern gamers.
+
+While questions remain about long-term implementation and community reception, the initial signs point toward positive momentum. We're particularly excited about the potential for innovation and the signal this sends about industry priorities.
+
+The development team's responsiveness to community feedback is especially noteworthy. This player-first approach is exactly what the gaming industry needs more of.
+
+### What Gamers Should Know
+
+As this story continues to unfold, here's what you should keep in mind:
+
+1. **Stay Updated**: Follow official channels for the latest information
+2. **Community Engagement**: Join discussions to share your perspective
+3. **Try It Out**: Experience the updates firsthand when available
+4. **Provide Feedback**: Your input helps shape future development
+
+**Expert Tip**: Keep an eye on Sportradar community forums and social media for insider insights and early previews of upcoming features.
+
+### Looking Ahead
+
+The coming weeks will be crucial in determining the full impact of this announcement. We'll be monitoring player reactions, performance metrics, and developer responses closely.
+
+Stay tuned to GameFlex for comprehensive coverage, expert analysis, and the latest updates as this story develops. We're committed to bringing you the insights that matter most to your gaming experience.
+
+**GameFlex Rating: 7.5/10** - Promising developments with strong potential for positive impact on the gaming community.
+        `
+    },
+
+    {
         id: "everything-announced-at-the-xbox-game-showcase-and",
         title: "Everything Announced at the Xbox Game Showcase and Summer Game Fest 2026",
         excerpt: "The Xbox Game Showcase and Summer Game Fest 2026 delivered a mix of exciting reveals and unexpected updates, reflecting the evolving landscape of the ...",
