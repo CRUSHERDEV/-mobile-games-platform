@@ -1,5 +1,69 @@
 export const articles = [
     {
+        id: "yaga-gets-renewed-for-season-2-at-crave-carrie-ann",
+        title: "Yaga Gets Renewed for Season 2 at Crave, Carrie-Anne Moss to Return",
+        excerpt: "Canadian streaming service Crave has greenlit the mystery thriller series Yaga for a second season, with Carrie-Anne Moss confirmed to return....",
+        category: "News",
+        date: "November 24, 2026",
+        author: "GameFlex Team",
+        image: "https://assets-prd.ignimgs.com/2026/10/21/main-image-carrie-anne-moss-in-yaga-photo-credit-crave-and-christopher-lawrence-1792618656342.jpg?width=1200&height=1200&fit=crop&format=jpg&auto=webp&quality=80",
+        content: `
+## Yaga Gets Renewed for Season 2 at Crave, Carrie-Anne Moss to Return - Complete Coverage 2025
+
+The gaming community is buzzing with the latest Yaga Gets Renewed news. Here's everything you need to know about this exciting development.
+
+### What Happened - Key Details
+
+Canadian streaming service Crave has greenlit the mystery thriller series Yaga for a second season, with Carrie-Anne Moss confirmed to return.
+
+This announcement has captured the attention of gamers worldwide, and for good reason. The update comes at a pivotal moment in the industry, where player experience and innovation continue to drive the gaming landscape forward.
+
+Industry insiders suggest this move could significantly impact how players engage with Yaga Gets Renewed and similar titles in the coming months.
+
+### Why This Matters to Gamers
+
+This development represents a major shift in the gaming ecosystem. For players invested in Yaga Gets Renewed, this means new opportunities to enhance their gaming experience and explore fresh content that pushes the boundaries of what's possible in modern gaming.
+
+The broader implications for the industry are substantial. As developers continue to innovate and respond to player feedback, we're witnessing an evolution in how games are developed, updated, and monetized. This trend toward player-centric design is reshaping the entire gaming landscape.
+
+### Key Features and Highlights
+
+- **Enhanced Player Experience**: Focus on quality-of-life improvements
+- **Community-Driven Updates**: Listening to player feedback
+- **Technical Innovation**: Leveraging latest gaming technology
+- **Long-Term Support**: Commitment to ongoing development
+- **Accessibility**: Making gaming more inclusive
+
+### Our GameFlex Take - Expert Analysis
+
+At GameFlex, we believe this is a promising step forward for Yaga Gets Renewed and the gaming community. The focus on player experience and continuous improvement demonstrates a commitment to delivering quality content that resonates with modern gamers.
+
+While questions remain about long-term implementation and community reception, the initial signs point toward positive momentum. We're particularly excited about the potential for innovation and the signal this sends about industry priorities.
+
+The development team's responsiveness to community feedback is especially noteworthy. This player-first approach is exactly what the gaming industry needs more of.
+
+### What Gamers Should Know
+
+As this story continues to unfold, here's what you should keep in mind:
+
+1. **Stay Updated**: Follow official channels for the latest information
+2. **Community Engagement**: Join discussions to share your perspective
+3. **Try It Out**: Experience the updates firsthand when available
+4. **Provide Feedback**: Your input helps shape future development
+
+**Expert Tip**: Keep an eye on Yaga Gets Renewed community forums and social media for insider insights and early previews of upcoming features.
+
+### Looking Ahead
+
+The coming weeks will be crucial in determining the full impact of this announcement. We'll be monitoring player reactions, performance metrics, and developer responses closely.
+
+Stay tuned to GameFlex for comprehensive coverage, expert analysis, and the latest updates as this story develops. We're committed to bringing you the insights that matter most to your gaming experience.
+
+**GameFlex Rating: 7.5/10** - Promising developments with strong potential for positive impact on the gaming community.
+        `
+    },
+
+    {
         id: "bet-habesha-security-guide-safe-betting-for-ethiop",
         title: "Bet Habesha security guide: Safe betting for Ethiopian players",
         excerpt: "Bet Habesha – The Complete Practical Guide for Ethiopian Players 1. Getting Started: Registration and First Steps For anyone new to the Ethiopian gamb...",
